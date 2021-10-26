@@ -8,7 +8,7 @@ const submitMessage = document.getElementById('submitButton');
 
 submitMessage.addEventListener('click', () => {
   console.log('inter');
-  axios.post('/chat', {
+  axios.post('/', {
     nickname: nickname.value,
     message: message.value
   });

@@ -2071,7 +2071,7 @@ var chatDiv = document.getElementById('chat');
 var submitMessage = document.getElementById('submitButton');
 submitMessage.addEventListener('click', function () {
   console.log('inter');
-  axios.post('/chat', {
+  axios.post('/', {
     nickname: nickname.value,
     message: message.value
   });
